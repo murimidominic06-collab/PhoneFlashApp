@@ -3,78 +3,63 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>PhoneFlashApp v5.0</title>
+<title>PhoneFlashApp v5.0 - Auto Download</title>
 <style>
 body{font-family:Arial;background:#111;color:#fff;text-align:center;padding:15px;margin:0}
 .box{background:#222;max-width:600px;margin:20px auto;padding:25px;border-radius:15px;border:2px solid #0f0}
-.btn{display:block;padding:20px;margin:12px 0;border-radius:10px;font-weight:bold;font-size:18px;cursor:pointer;border:none;width:100%}
+.btn{display:block;padding:18px;margin:10px 0;border-radius:10px;font-weight:bold;font-size:18px;cursor:pointer;border:none;width:100%}
 .free{background:#0f0;color:#000}
 .paid{background:#fc0;color:#000}
-.input{padding:15px;width:90%;border-radius:8px;border:2px solid #fc0;font-size:16px;margin:10px 0;text-align:center}
+.input{padding:15px;width:85%;border-radius:8px;border:2px solid #fc0;font-size:16px;margin:10px 0;text-align:center}
 .hidden{display:none}
-.success{background:#0f0;color:#000;padding:15px;border-radius:10px;margin:10px 0;font-weight:bold}
 </style>
 <script>
-function ownerFree(){
-  alert("OWNER FILE: G:\\PhoneFlashApp\\Publish\\ - Hiyo ndio FREE yako!");
-}
 function showPay(){
   document.getElementById('payBox').classList.remove('hidden');
-  document.getElementById('payBox').scrollIntoView();
 }
-function verifyAndDownload(){
-  let code = document.getElementById('mpesaCode').value.trim();
-  if(code.length < 6){
-    alert("Weka M-Pesa Transaction Code! Mfano: QGH7K9...");
+function downloadNow(){
+  let code = document.getElementById('code').value.trim();
+  if(code.length < 5){
+    alert("Weka M-Pesa Code yako kwanza! Umeilipa 0119210386?");
     return;
   }
-  if(code.length >= 6){
-    document.getElementById('successBox').classList.remove('hidden');
-    document.getElementById('downloadBtn').classList.remove('hidden');
-    // Save code for verification later
-    localStorage.setItem('paid_'+code, 'true');
-    alert("Asante! Code "+code+" imekubaliwa. Bonyeza DOWNLOAD sasa!");
-  }
-}
-function downloadApp(){
-  // Hapa ndio file ya customer itatoka
-  // Kwa sasa inalink kwa GitHub Release - uta-upload EXE hapo
-  window.location.href="https://github.com/murimidominic06-collab/PhoneFlashApp/releases/download/v5.0/PhoneFlashApp_CUSTOMER.exe";
-  alert("Download inaanza... License: PAID-"+document.getElementById('mpesaCode').value);
+  // DOWNLOAD DIRECT - file iko kwa docs
+  let link = document.createElement('a');
+  link.href = "docs/PhoneFlashApp_CUSTOMER_PAID.exe";
+  // kama hiyo file haipo, jaribu jina lingine
+  link.href = "./PhoneFlashApp_CUSTOMER_PAID.exe";
+  link.download = "PhoneFlashApp_CUSTOMER_PAID.exe";
+  document.body.appendChild(link);
+  link.click();
+  alert("Download inaanza! Code: "+code+" - License yako: PAID-"+code+"\nIkiwa download haianzi, fungua: https://github.com/murimidominic06-collab/PhoneFlashApp/raw/main/docs/ - chagua EXE");
+  // pia redirect kwa release kama backup
+  setTimeout(()=>{ window.open("https://github.com/murimidominic06-collab/PhoneFlashApp/tree/main/docs","_blank"); }, 1500);
 }
 </script>
 </head>
 <body>
 <div class="box">
 <h1 style="color:#0f0">PhoneFlashApp v5.0</h1>
-<p>Format | Unlock | Reset | FRP</p><hr>
+<p>Format | Unlock | Reset</p><hr>
 
-<h2 style="color:#0f0">OWNER - FREE</h2>
-<button class="btn free" onclick="ownerFree()">MY FREE COPY</button>
-<p style="font-size:11px;color:#0f0">G:\PhoneFlashApp\Publish\ - No payment</p>
+<h2 style="color:#0f0">OWNER</h2>
+<button class="btn free" onclick="alert('Fungua G:\\PhoneFlashApp\\Publish\\ kwa laptop yako - FREE')">MY FREE COPY</button>
 <hr>
 
 <h2 style="color:#fc0">CUSTOMER - 1500 KES</h2>
-<div style="font-size:36px;color:#fc0;font-weight:bold">1500 KES</div>
-<button class="btn paid" onclick="showPay()">BUY NOW - Lipa Kwanza</button>
+<div style="font-size:38px;color:#fc0;font-weight:bold">1500 KES</div>
+<button class="btn paid" onclick="showPay()">LIPA 0119210386 - Kisha Download</button>
 
-<div id="payBox" class="hidden" style="background:#333;padding:20px;border-radius:10px;margin-top:15px;border:2px solid #fc0">
-<h3 style="color:#fc0">LIPA M-PESA</h3>
-<p style="font-size:20px;font-weight:bold">0119210386</p>
-<p>Jina: Dominic Murimi</p>
-<p style="font-size:12px">1. Lipa 1500 KES kwa 0119210386<br>2. Copy M-Pesa Code (e.g. QGH... )<br>3. Weka hapa chini</p>
-<input id="mpesaCode" class="input" placeholder="Weka M-Pesa Code hapa - QGH7...">
-<button class="btn free" onclick="verifyAndDownload()">VERIFY & UNLOCK DOWNLOAD</button>
-
-<div id="successBox" class="hidden success">
-✅ Malipo Imethibitishwa! Unaweza Download Sasa
-</div>
-<button id="downloadBtn" class="hidden btn paid" onclick="downloadApp()">⬇️ DOWNLOAD APP NOW (1500 KES PAID)</button>
-<p style="font-size:10px;margin-top:10px">Code yako itahifadhiwa kama license</p>
+<div id="payBox" class="hidden" style="background:#333;padding:15px;border-radius:10px;margin-top:15px;border:2px solid #fc0">
+<p style="font-size:18px">M-Pesa: <b>0119210386</b><br>Jina: Dominic</p>
+<p style="font-size:12px">Lipa 1500, copy Code ya M-Pesa (QGH...), weka hapa:</p>
+<input id="code" class="input" placeholder="Weka M-Pesa Code hapa">
+<button class="btn free" onclick="downloadNow()">✅ NIMELIPA - DOWNLOAD NOW</button>
+<p style="font-size:10px">Baada ya kulipa, bonyeza hiyo button download itaanza direct</p>
 </div>
 
 <hr>
-<p style="font-size:10px;color:#666">M-Pesa: 0119210386 | Auto Download System</p>
+<p style="font-size:10px;color:#666">Auto Download System - M-Pesa 0119210386</p>
 </div>
 </body>
 </html>
