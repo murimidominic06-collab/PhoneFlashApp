@@ -1,41 +1,42 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>PhoneFlashApp v5.0</title>
 <style>
-body{font-family:Arial;background:#111;color:#fff;text-align:center;padding:15px}
+body{font-family:Arial,sans-serif;background:#111;color:#fff;text-align:center;padding:15px;margin:0}
 .box{background:#222;max-width:600px;margin:20px auto;padding:25px;border-radius:15px;border:2px solid #0f0}
-.btn{display:block;padding:20px;margin:12px 0;border-radius:10px;text-decoration:none;font-weight:bold;font-size:18px;cursor:pointer}
-.free{background:lime;color:#000}
-.paid{background:gold;color:#000}
+.btn{display:block;padding:20px;margin:12px 0;border-radius:10px;text-decoration:none;font-weight:bold;font-size:18px;cursor:pointer;border:none;width:100%}
+.free{background:#00ff00;color:#000}
+.paid{background:#ffcc00;color:#000}
 </style>
 <script>
 function ownerFree(){
   alert("OWNER: File yako ya FREE iko kwa laptop yako hapa:\nG:\\PhoneFlashApp\\Publish\\\n\nUsidownload kwa site! Tumia ile ya local - ni FREE bila license!");
 }
 function buyNow(){
-  alert("Lipa 1500 KES M-Pesa: 0712 345 678\nKisha tuma screenshot WhatsApp!");
-  window.location.href="https://wa.me/254712345678?text=Nimenunua PhoneFlashApp 1500KES - Nipe license";
+  alert("Lipa 1500 KES M-Pesa: 0119210386\nKisha tuma screenshot WhatsApp!");
+  window.location.href="https://wa.me/254119210386?text=Nimenunua PhoneFlashApp 1500KES - Nipe license";
 }
 </script>
 </head>
 <body>
 <div class="box">
-<h1 style="color:lime">?? PhoneFlashApp v5.0</h1>
-<p>? Format Any Phone<br>? Remove Password<br>? Factory Reset</p>
+<h1 style="color:#0f0">PhoneFlashApp v5.0</h1>
+<p>Format | Unlock | Reset | FRP</p>
 <hr>
-<h2 style="color:lime">YOUR LAPTOP - FREE</h2>
-<a class="btn free" onclick="ownerFree()">?? MY FREE COPY - OPEN LOCAL</a>
-<p style="color:lime;font-size:12px">G:\\PhoneFlashApp\\Publish\\ - No Payment</p>
+<h2 style="color:#0f0">OWNER - FREE</h2>
+<button class="btn free" onclick="ownerFree()">MY FREE COPY - Owner</button>
+<p style="color:#0f0;font-size:12px">G:\PhoneFlashApp\Publish\ - No Payment Needed</p>
 <hr>
-<h2 style="color:gold">CUSTOMERS - 1500 KES</h2>
-<div style="font-size:36px;color:gold">1500 KES</div>
-<a class="btn paid" onclick="buyNow()">?? BUY NOW - M-Pesa + WhatsApp</a>
-<p style="font-size:13px">Pay: 0712 345 678</p>
+<h2 style="color:#ffcc00">CUSTOMER - 1500 KES</h2>
+<div style="font-size:36px;color:#ffcc00;font-weight:bold">1500 KES</div>
+<button class="btn paid" onclick="buyNow()">BUY NOW - Lipa M-Pesa</button>
+<p style="font-size:14px;font-weight:bold">M-Pesa: 0119210386</p>
+<p style="font-size:12px">WhatsApp receipt after payment</p>
 <hr>
-<p style="font-size:10px;color:#666">LIVE on GitHub Pages - FREE Hosting</p>
+<p style="font-size:10px;color:#666">LIVE: murimidominic06-collab.github.io/PhoneFlashApp</p>
 </div>
 </body>
 </html>
