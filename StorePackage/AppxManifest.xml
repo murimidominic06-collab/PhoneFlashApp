@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+         xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+         xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities">
+  <Identity Name="PhoneFlashApp.PAID" Publisher="CN=YourCompany" Version="5.0.0.0" />
+  <Properties>
+    <DisplayName>PhoneFlashApp - Phone Format Tool</DisplayName>
+    <PublisherDisplayName>Your Company Name</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.17763.0" MaxVersionTested="10.0.22621.0" />
+  </Dependencies>
+  <Resources>
+    <Resource Language="en-us" />
+  </Resources>
+  <Applications>
+    <Application Id="PhoneFlashApp" Executable="PhoneFlashApp_PAID_1000KES.exe" EntryPoint="Windows.FullTrustApplication">
+      <uap:VisualElements DisplayName="PhoneFlashApp PAID" Description="Format phones, remove password - 1000 KES" 
+        BackgroundColor="transparent" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" />
+    </Application>
+  </Applications>
+  <Capabilities>
+    <rescap:Capability Name="runFullTrust" />
+  </Capabilities>
+</Package>

@@ -1,0 +1,6 @@
+﻿17:54:16 - App started 3.0 UPGRADED - FINAL - Ready
+17:54:34 - *** PHONE DETECTED AUTOMATICALLY ***
+17:54:34 - ADB: List of devices attached
+1121115426001716	device
+
+

@@ -1,0 +1,847 @@
+{
+    "firmwareFolder":  "G:\\PhoneFlashApp\\Firmwares",
+    "appName":  "PhoneFlashApp",
+    "location":  "G:\\PhoneFlashApp",
+    "phones":  [
+                   {
+                       "model":  "Samsung_A03",
+                       "brand":  "Samsung",
+                       "tool":  "Odin",
+                       "firmwareFile":  "Samsung_A03.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Samsung_A04",
+                       "brand":  "Samsung",
+                       "tool":  "Odin",
+                       "firmwareFile":  "Samsung_A04.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Samsung_A12",
+                       "brand":  "Samsung",
+                       "tool":  "Odin",
+                       "firmwareFile":  "Samsung_A12.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  "https://samfw.com - search Samsung_A12"
+                   },
+                   {
+                       "model":  "Samsung_A13",
+                       "brand":  "Samsung",
+                       "tool":  "Odin",
+                       "firmwareFile":  "Samsung_A13.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Samsung_A14",
+                       "brand":  "Samsung",
+                       "tool":  "Odin",
+                       "firmwareFile":  "Samsung_A14.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Samsung_A23",
+                       "brand":  "Samsung",
+                       "tool":  "Odin",
+                       "firmwareFile":  "Samsung_A23.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Samsung_A32",
+                       "brand":  "Samsung",
+                       "tool":  "Odin",
+                       "firmwareFile":  "Samsung_A32.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Samsung_A33",
+                       "brand":  "Samsung",
+                       "tool":  "Odin",
+                       "firmwareFile":  "Samsung_A33.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Samsung_A52",
+                       "brand":  "Samsung",
+                       "tool":  "Odin",
+                       "firmwareFile":  "Samsung_A52.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Samsung_A53",
+                       "brand":  "Samsung",
+                       "tool":  "Odin",
+                       "firmwareFile":  "Samsung_A53.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Samsung_M11",
+                       "brand":  "Samsung",
+                       "tool":  "Odin",
+                       "firmwareFile":  "Samsung_M11.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Samsung_M12",
+                       "brand":  "Samsung",
+                       "tool":  "Odin",
+                       "firmwareFile":  "Samsung_M12.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Samsung_M13",
+                       "brand":  "Samsung",
+                       "tool":  "Odin",
+                       "firmwareFile":  "Samsung_M13.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Samsung_M32",
+                       "brand":  "Samsung",
+                       "tool":  "Odin",
+                       "firmwareFile":  "Samsung_M32.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Samsung_M53",
+                       "brand":  "Samsung",
+                       "tool":  "Odin",
+                       "firmwareFile":  "Samsung_M53.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Samsung_S20",
+                       "brand":  "Samsung",
+                       "tool":  "Odin",
+                       "firmwareFile":  "Samsung_S20.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Samsung_S21",
+                       "brand":  "Samsung",
+                       "tool":  "Odin",
+                       "firmwareFile":  "Samsung_S21.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Samsung_S22",
+                       "brand":  "Samsung",
+                       "tool":  "Odin",
+                       "firmwareFile":  "Samsung_S22.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Samsung_S23",
+                       "brand":  "Samsung",
+                       "tool":  "Odin",
+                       "firmwareFile":  "Samsung_S23.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Samsung_S24",
+                       "brand":  "Samsung",
+                       "tool":  "Odin",
+                       "firmwareFile":  "Samsung_S24.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Tecno_Spark8",
+                       "brand":  "Tecno",
+                       "tool":  "SPFlash",
+                       "firmwareFile":  "Tecno_Spark8.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Tecno_Spark9",
+                       "brand":  "Tecno",
+                       "tool":  "SPFlash",
+                       "firmwareFile":  "Tecno_Spark9.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Tecno_Spark10",
+                       "brand":  "Tecno",
+                       "tool":  "SPFlash",
+                       "firmwareFile":  "Tecno_Spark10.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Tecno_Spark20",
+                       "brand":  "Tecno",
+                       "tool":  "SPFlash",
+                       "firmwareFile":  "Tecno_Spark20.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Tecno_Camon18",
+                       "brand":  "Tecno",
+                       "tool":  "SPFlash",
+                       "firmwareFile":  "Tecno_Camon18.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Tecno_Camon19",
+                       "brand":  "Tecno",
+                       "tool":  "SPFlash",
+                       "firmwareFile":  "Tecno_Camon19.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Tecno_Camon20",
+                       "brand":  "Tecno",
+                       "tool":  "SPFlash",
+                       "firmwareFile":  "Tecno_Camon20.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Tecno_Pop5",
+                       "brand":  "Tecno",
+                       "tool":  "SPFlash",
+                       "firmwareFile":  "Tecno_Pop5.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Tecno_Pop6",
+                       "brand":  "Tecno",
+                       "tool":  "SPFlash",
+                       "firmwareFile":  "Tecno_Pop6.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Tecno_Pop7",
+                       "brand":  "Tecno",
+                       "tool":  "SPFlash",
+                       "firmwareFile":  "Tecno_Pop7.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Infinix_Hot10",
+                       "brand":  "Infinix",
+                       "tool":  "SPFlash",
+                       "firmwareFile":  "Infinix_Hot10.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Infinix_Hot11",
+                       "brand":  "Infinix",
+                       "tool":  "SPFlash",
+                       "firmwareFile":  "Infinix_Hot11.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Infinix_Hot12",
+                       "brand":  "Infinix",
+                       "tool":  "SPFlash",
+                       "firmwareFile":  "Infinix_Hot12.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Infinix_Hot20",
+                       "brand":  "Infinix",
+                       "tool":  "SPFlash",
+                       "firmwareFile":  "Infinix_Hot20.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Infinix_Hot30",
+                       "brand":  "Infinix",
+                       "tool":  "SPFlash",
+                       "firmwareFile":  "Infinix_Hot30.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Infinix_Hot40",
+                       "brand":  "Infinix",
+                       "tool":  "SPFlash",
+                       "firmwareFile":  "Infinix_Hot40.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Infinix_Note10",
+                       "brand":  "Infinix",
+                       "tool":  "SPFlash",
+                       "firmwareFile":  "Infinix_Note10.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Infinix_Note11",
+                       "brand":  "Infinix",
+                       "tool":  "SPFlash",
+                       "firmwareFile":  "Infinix_Note11.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Infinix_Note12",
+                       "brand":  "Infinix",
+                       "tool":  "SPFlash",
+                       "firmwareFile":  "Infinix_Note12.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Infinix_Note30",
+                       "brand":  "Infinix",
+                       "tool":  "SPFlash",
+                       "firmwareFile":  "Infinix_Note30.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Infinix_Smart6",
+                       "brand":  "Infinix",
+                       "tool":  "SPFlash",
+                       "firmwareFile":  "Infinix_Smart6.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Infinix_Smart7",
+                       "brand":  "Infinix",
+                       "tool":  "SPFlash",
+                       "firmwareFile":  "Infinix_Smart7.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Infinix_Smart8",
+                       "brand":  "Infinix",
+                       "tool":  "SPFlash",
+                       "firmwareFile":  "Infinix_Smart8.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Infinix_Zero20",
+                       "brand":  "Infinix",
+                       "tool":  "SPFlash",
+                       "firmwareFile":  "Infinix_Zero20.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Infinix_Zero30",
+                       "brand":  "Infinix",
+                       "tool":  "SPFlash",
+                       "firmwareFile":  "Infinix_Zero30.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Xiaomi_Redmi9",
+                       "brand":  "Xiaomi",
+                       "tool":  "MiFlash",
+                       "firmwareFile":  "Xiaomi_Redmi9.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Xiaomi_Redmi10",
+                       "brand":  "Xiaomi",
+                       "tool":  "MiFlash",
+                       "firmwareFile":  "Xiaomi_Redmi10.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Xiaomi_Redmi12",
+                       "brand":  "Xiaomi",
+                       "tool":  "MiFlash",
+                       "firmwareFile":  "Xiaomi_Redmi12.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Xiaomi_Redmi13",
+                       "brand":  "Xiaomi",
+                       "tool":  "MiFlash",
+                       "firmwareFile":  "Xiaomi_Redmi13.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Xiaomi_RedmiNote10",
+                       "brand":  "Xiaomi",
+                       "tool":  "MiFlash",
+                       "firmwareFile":  "Xiaomi_RedmiNote10.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Xiaomi_RedmiNote11",
+                       "brand":  "Xiaomi",
+                       "tool":  "MiFlash",
+                       "firmwareFile":  "Xiaomi_RedmiNote11.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Xiaomi_RedmiNote12",
+                       "brand":  "Xiaomi",
+                       "tool":  "MiFlash",
+                       "firmwareFile":  "Xiaomi_RedmiNote12.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Xiaomi_RedmiNote13",
+                       "brand":  "Xiaomi",
+                       "tool":  "MiFlash",
+                       "firmwareFile":  "Xiaomi_RedmiNote13.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Xiaomi_PocoM3",
+                       "brand":  "Xiaomi",
+                       "tool":  "MiFlash",
+                       "firmwareFile":  "Xiaomi_PocoM3.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Xiaomi_PocoM5",
+                       "brand":  "Xiaomi",
+                       "tool":  "MiFlash",
+                       "firmwareFile":  "Xiaomi_PocoM5.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Xiaomi_PocoX3",
+                       "brand":  "Xiaomi",
+                       "tool":  "MiFlash",
+                       "firmwareFile":  "Xiaomi_PocoX3.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Xiaomi_PocoX5",
+                       "brand":  "Xiaomi",
+                       "tool":  "MiFlash",
+                       "firmwareFile":  "Xiaomi_PocoX5.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Oppo_A15",
+                       "brand":  "Oppo",
+                       "tool":  "Fastboot",
+                       "firmwareFile":  "Oppo_A15.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Oppo_A16",
+                       "brand":  "Oppo",
+                       "tool":  "Fastboot",
+                       "firmwareFile":  "Oppo_A16.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Oppo_A17",
+                       "brand":  "Oppo",
+                       "tool":  "Fastboot",
+                       "firmwareFile":  "Oppo_A17.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Oppo_A38",
+                       "brand":  "Oppo",
+                       "tool":  "Fastboot",
+                       "firmwareFile":  "Oppo_A38.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Oppo_A54",
+                       "brand":  "Oppo",
+                       "tool":  "Fastboot",
+                       "firmwareFile":  "Oppo_A54.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Oppo_A57",
+                       "brand":  "Oppo",
+                       "tool":  "Fastboot",
+                       "firmwareFile":  "Oppo_A57.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Oppo_A78",
+                       "brand":  "Oppo",
+                       "tool":  "Fastboot",
+                       "firmwareFile":  "Oppo_A78.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Oppo_Reno7",
+                       "brand":  "Oppo",
+                       "tool":  "Fastboot",
+                       "firmwareFile":  "Oppo_Reno7.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Vivo_Y15",
+                       "brand":  "Vivo",
+                       "tool":  "Fastboot",
+                       "firmwareFile":  "Vivo_Y15.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Vivo_Y16",
+                       "brand":  "Vivo",
+                       "tool":  "Fastboot",
+                       "firmwareFile":  "Vivo_Y16.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Vivo_Y21",
+                       "brand":  "Vivo",
+                       "tool":  "Fastboot",
+                       "firmwareFile":  "Vivo_Y21.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Vivo_Y22",
+                       "brand":  "Vivo",
+                       "tool":  "Fastboot",
+                       "firmwareFile":  "Vivo_Y22.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Vivo_Y33",
+                       "brand":  "Vivo",
+                       "tool":  "Fastboot",
+                       "firmwareFile":  "Vivo_Y33.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Vivo_V21",
+                       "brand":  "Vivo",
+                       "tool":  "Fastboot",
+                       "firmwareFile":  "Vivo_V21.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Vivo_V25",
+                       "brand":  "Vivo",
+                       "tool":  "Fastboot",
+                       "firmwareFile":  "Vivo_V25.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Realme_C21",
+                       "brand":  "Realme",
+                       "tool":  "Fastboot",
+                       "firmwareFile":  "Realme_C21.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Realme_C25",
+                       "brand":  "Realme",
+                       "tool":  "Fastboot",
+                       "firmwareFile":  "Realme_C25.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Realme_C30",
+                       "brand":  "Realme",
+                       "tool":  "Fastboot",
+                       "firmwareFile":  "Realme_C30.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Realme_C35",
+                       "brand":  "Realme",
+                       "tool":  "Fastboot",
+                       "firmwareFile":  "Realme_C35.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Realme_C55",
+                       "brand":  "Realme",
+                       "tool":  "Fastboot",
+                       "firmwareFile":  "Realme_C55.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Realme_8",
+                       "brand":  "Realme",
+                       "tool":  "Fastboot",
+                       "firmwareFile":  "Realme_8.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Realme_9",
+                       "brand":  "Realme",
+                       "tool":  "Fastboot",
+                       "firmwareFile":  "Realme_9.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Realme_10",
+                       "brand":  "Realme",
+                       "tool":  "Fastboot",
+                       "firmwareFile":  "Realme_10.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Realme_11",
+                       "brand":  "Realme",
+                       "tool":  "Fastboot",
+                       "firmwareFile":  "Realme_11.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Nokia_C10",
+                       "brand":  "Nokia",
+                       "tool":  "Fastboot",
+                       "firmwareFile":  "Nokia_C10.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Nokia_C20",
+                       "brand":  "Nokia",
+                       "tool":  "Fastboot",
+                       "firmwareFile":  "Nokia_C20.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Nokia_C30",
+                       "brand":  "Nokia",
+                       "tool":  "Fastboot",
+                       "firmwareFile":  "Nokia_C30.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Nokia_G10",
+                       "brand":  "Nokia",
+                       "tool":  "Fastboot",
+                       "firmwareFile":  "Nokia_G10.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Nokia_G20",
+                       "brand":  "Nokia",
+                       "tool":  "Fastboot",
+                       "firmwareFile":  "Nokia_G20.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Nokia_G21",
+                       "brand":  "Nokia",
+                       "tool":  "Fastboot",
+                       "firmwareFile":  "Nokia_G21.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Nokia_G60",
+                       "brand":  "Nokia",
+                       "tool":  "Fastboot",
+                       "firmwareFile":  "Nokia_G60.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Nokia_X10",
+                       "brand":  "Nokia",
+                       "tool":  "Fastboot",
+                       "firmwareFile":  "Nokia_X10.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Nokia_X20",
+                       "brand":  "Nokia",
+                       "tool":  "Fastboot",
+                       "firmwareFile":  "Nokia_X20.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Pixel_6",
+                       "brand":  "Google",
+                       "tool":  "Fastboot",
+                       "firmwareFile":  "Pixel_6.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Pixel_7",
+                       "brand":  "Google",
+                       "tool":  "Fastboot",
+                       "firmwareFile":  "Pixel_7.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Pixel_7a",
+                       "brand":  "Google",
+                       "tool":  "Fastboot",
+                       "firmwareFile":  "Pixel_7a.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Pixel_8",
+                       "brand":  "Google",
+                       "tool":  "Fastboot",
+                       "firmwareFile":  "Pixel_8.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  "https://developers.google.com/android/images - official"
+                   },
+                   {
+                       "model":  "Itel_A26",
+                       "brand":  "Itel",
+                       "tool":  "SPFlash",
+                       "firmwareFile":  "Itel_A26.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Itel_P40",
+                       "brand":  "Itel",
+                       "tool":  "SPFlash",
+                       "firmwareFile":  "Itel_P40.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Itel_S23",
+                       "brand":  "Itel",
+                       "tool":  "SPFlash",
+                       "firmwareFile":  "Itel_S23.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Huawei_Y9a",
+                       "brand":  "Huawei",
+                       "tool":  "Fastboot",
+                       "firmwareFile":  "Huawei_Y9a.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Huawei_Nova9",
+                       "brand":  "Huawei",
+                       "tool":  "Fastboot",
+                       "firmwareFile":  "Huawei_Nova9.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Huawei_Nova10",
+                       "brand":  "Huawei",
+                       "tool":  "Fastboot",
+                       "firmwareFile":  "Huawei_Nova10.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "OnePlus_Nord2",
+                       "brand":  "OnePlus",
+                       "tool":  "Fastboot",
+                       "firmwareFile":  "OnePlus_Nord2.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "OnePlus_9",
+                       "brand":  "OnePlus",
+                       "tool":  "Fastboot",
+                       "firmwareFile":  "OnePlus_9.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "OnePlus_10",
+                       "brand":  "OnePlus",
+                       "tool":  "Fastboot",
+                       "firmwareFile":  "OnePlus_10.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "OnePlus_11",
+                       "brand":  "OnePlus",
+                       "tool":  "Fastboot",
+                       "firmwareFile":  "OnePlus_11.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   },
+                   {
+                       "model":  "Motorola_G20",
+                       "brand":  "Motorola",
+                       "tool":  "Fastboot",
+                       "firmwareFile":  "Motorola_G20.zip",
+                       "status":  "Need official firmware",
+                       "downloadUrl":  ""
+                   }
+               ]
+}
