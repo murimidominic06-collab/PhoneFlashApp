@@ -3,63 +3,48 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>PhoneFlashApp v5.0 - Auto Download</title>
+<title>PhoneFlashApp v5.0 - PUBLIC</title>
 <style>
 body{font-family:Arial;background:#111;color:#fff;text-align:center;padding:15px;margin:0}
-.box{background:#222;max-width:600px;margin:20px auto;padding:25px;border-radius:15px;border:2px solid #0f0}
-.btn{display:block;padding:18px;margin:10px 0;border-radius:10px;font-weight:bold;font-size:18px;cursor:pointer;border:none;width:100%}
+.box{background:#222;max-width:650px;margin:20px auto;padding:25px;border-radius:15px;border:2px solid #0f0}
+.btn{display:block;padding:18px;margin:10px 0;border-radius:10px;font-weight:bold;font-size:18px;cursor:pointer;border:none;width:100%;text-decoration:none}
 .free{background:#0f0;color:#000}
 .paid{background:#fc0;color:#000}
 .input{padding:15px;width:85%;border-radius:8px;border:2px solid #fc0;font-size:16px;margin:10px 0;text-align:center}
 .hidden{display:none}
 </style>
 <script>
-function showPay(){
-  document.getElementById('payBox').classList.remove('hidden');
-}
+function showPay(){document.getElementById('payBox').classList.remove('hidden');}
 function downloadNow(){
-  let code = document.getElementById('code').value.trim();
-  if(code.length < 5){
-    alert("Weka M-Pesa Code yako kwanza! Umeilipa 0119210386?");
-    return;
-  }
-  // DOWNLOAD DIRECT - file iko kwa docs
-  let link = document.createElement('a');
-  link.href = "docs/PhoneFlashApp_CUSTOMER_PAID.exe";
-  // kama hiyo file haipo, jaribu jina lingine
-  link.href = "./PhoneFlashApp_CUSTOMER_PAID.exe";
-  link.download = "PhoneFlashApp_CUSTOMER_PAID.exe";
-  document.body.appendChild(link);
-  link.click();
-  alert("Download inaanza! Code: "+code+" - License yako: PAID-"+code+"\nIkiwa download haianzi, fungua: https://github.com/murimidominic06-collab/PhoneFlashApp/raw/main/docs/ - chagua EXE");
-  // pia redirect kwa release kama backup
-  setTimeout(()=>{ window.open("https://github.com/murimidominic06-collab/PhoneFlashApp/tree/main/docs","_blank"); }, 1500);
+  let c=document.getElementById('code').value.trim();
+  if(c.length<5){alert("Lipa 1500 kwa 0119210386 kwanza, kisha weka M-Pesa Code!");return;}
+  alert("Asante! Code "+c+" - Download inaanza!");
+  window.location.href="https://github.com/murimidominic06-collab/PhoneFlashApp/raw/main/docs/PhoneFlashApp_CUSTOMER_PAID.exe";
 }
 </script>
 </head>
 <body>
 <div class="box">
 <h1 style="color:#0f0">PhoneFlashApp v5.0</h1>
-<p>Format | Unlock | Reset</p><hr>
-
-<h2 style="color:#0f0">OWNER</h2>
-<button class="btn free" onclick="alert('Fungua G:\\PhoneFlashApp\\Publish\\ kwa laptop yako - FREE')">MY FREE COPY</button>
+<p style="color:#0f0">✅ PUBLIC - Anyone Can Download</p>
+<p>Professional Phone Flashing Tool<br>Format | FRP | Password Remove</p>
 <hr>
-
-<h2 style="color:#fc0">CUSTOMER - 1500 KES</h2>
-<div style="font-size:38px;color:#fc0;font-weight:bold">1500 KES</div>
-<button class="btn paid" onclick="showPay()">LIPA 0119210386 - Kisha Download</button>
-
-<div id="payBox" class="hidden" style="background:#333;padding:15px;border-radius:10px;margin-top:15px;border:2px solid #fc0">
-<p style="font-size:18px">M-Pesa: <b>0119210386</b><br>Jina: Dominic</p>
-<p style="font-size:12px">Lipa 1500, copy Code ya M-Pesa (QGH...), weka hapa:</p>
-<input id="code" class="input" placeholder="Weka M-Pesa Code hapa">
-<button class="btn free" onclick="downloadNow()">✅ NIMELIPA - DOWNLOAD NOW</button>
-<p style="font-size:10px">Baada ya kulipa, bonyeza hiyo button download itaanza direct</p>
+<h2 style="color:#0f0">OWNER ACCESS</h2>
+<a class="btn free" href="https://github.com/murimidominic06-collab/PhoneFlashApp/raw/main/docs/PhoneFlashApp_OWNER_LAPTOP_FREE.exe">MY FREE COPY - DIRECT DOWNLOAD</a>
+<hr>
+<h2 style="color:#fc0">PUBLIC CUSTOMERS - 1500 KES</h2>
+<div style="font-size:40px;color:#fc0;font-weight:bold">1500 KES</div>
+<p>M-Pesa Till: <b>0119210386</b></p>
+<button class="btn paid" onclick="showPay()">BUY NOW - LIPA THEN DOWNLOAD</button>
+<div id="payBox" class="hidden" style="background:#333;padding:15px;border-radius:10px;border:2px solid #fc0;margin-top:10px">
+<p>Lipa 1500 kwa <b>0119210386</b><br>Weka M-Pesa Code:</p>
+<input id="code" class="input" placeholder="M-Pesa Code e.g. QGH7...">
+<button class="btn free" onclick="downloadNow()">VERIFY & DOWNLOAD NOW</button>
 </div>
-
 <hr>
-<p style="font-size:10px;color:#666">Auto Download System - M-Pesa 0119210386</p>
+<p>🌍 Public Link:</p>
+<p style="font-size:12px;word-break:break-all;color:#0f0">https://murimidominic06-collab.github.io/PhoneFlashApp/</p>
+<p style="font-size:10px;color:#666">GitHub: murimidominic06-collab/PhoneFlashApp - PUBLIC REPO</p>
 </div>
 </body>
 </html>
