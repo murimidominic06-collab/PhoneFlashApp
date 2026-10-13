@@ -1,30 +1,127 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Phone Flash App v5.0 - Download</title>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Phone Flash App v5.0 - Auto M-Pesa</title>
 <style>
-body{font-family:Arial;text-align:center;padding:40px;background:#0d1117;color:#fff}
-.box{max-width:600px;margin:auto;background:#161b22;padding:30px;border-radius:15px}
-a.btn{display:inline-block;background:#238636;color:#fff;padding:15px 30px;text-decoration:none;border-radius:8px;font-size:18px;margin:10px;font-weight:bold}
-a.btn:hover{background:#2ea043}
-.small{color:#8b949e;font-size:14px}
+body{font-family:Arial;background:#0d1117;color:#fff;padding:20px}
+.container{max-width:600px;margin:auto}
+.box{background:#161b22;border:1px solid #30363d;border-radius:12px;padding:25px;margin:15px 0}
+.btn{width:100%;background:#238636;color:#fff;padding:15px;border:none;border-radius:8px;font-size:18px;font-weight:bold;cursor:pointer}
+.btn:disabled{background:#444}
+input{width:100%;padding:14px;background:#0d1117;border:1px solid #30363d;border-radius:8px;color:#fff;margin:8px 0}
+.mpesa-box{background:#0d4a2e;border:2px solid #238636;padding:20px;border-radius:12px;text-align:center}
+.mpesa-num{font-size:28px;color:#3fb950;font-weight:bold}
+.status{padding:12px;border-radius:8px;margin:10px 0;display:none}
 </style>
 </head>
 <body>
-<div class="box">
-<h1>📱 Phone Flash App v5.0</h1>
-<p>First official release - For Windows</p>
-<p>Includes ADB tools and direct download</p>
-<h2 style="color:#58a6ff">M-Pesa: 0119210386</h2>
-
-<a class="btn" href="https://github.com/murimidominic06-collab/PhoneFlashApp/releases/download/v1.0.0/PhoneFlashApp_v1.0.0.zip">
-⬇️ DOWNLOAD v1.0.0 (12 MB ZIP)
-</a>
-
-<p class="small">1. Download ZIP<br>2. Extract<br>3. Run PhoneFlashApp_CUSTOMER_PAID.exe</p>
-
-<p><a href="https://github.com/murimidominic06-collab/PhoneFlashApp/releases" style="color:#58a6ff">View All Releases</a></p>
+<div class="container">
+<div class="box" style="text-align:center">
+<h1 style="color:#58a6ff">📱 Phone Flash App v5.0</h1>
+<p>Auto M-Pesa Payment</p>
 </div>
+
+<div class="box">
+<div class="mpesa-box">
+<p>Lipa KSH 500 kwa M-Pesa</p>
+<div class="mpesa-num">0119210386</div>
+<p style="font-size:13px;color:#aaa">STK Push itatumwa kwa simu yako</p>
+</div>
+
+<label>Namba ya M-Pesa (Safaricom)</label>
+<input id="phone" placeholder="07XXXXXXXX au 2547XXXXXXXX">
+
+<button class="btn" id="payBtn" onclick="lipa()">💳 LIPA KSH 500 SASA (STK PUSH)</button>
+
+<div id="waiting" class="status" style="background:#1f6feb;display:none">⏳ Tuma request... Angalia simu yako uingize M-Pesa PIN</div>
+<div id="success" class="status" style="background:#0d4a2e;border:1px solid #238636;color:#3fb950"></div>
+<div id="fail" class="status" style="background:#4a0d0d;border:1px solid #ff4444"></div>
+
+<div id="downloadArea" style="display:none;margin-top:20px">
+<a class="btn" style="background:#1f6feb;text-decoration:none;display:block;text-align:center" href="https://github.com/murimidominic06-collab/PhoneFlashApp/releases/download/v1.0.0/PhoneFlashApp_v1.0.0.zip">⬇️ DOWNLOAD NOW (12 MB)</a>
+</div>
+</div>
+
+<div class="box" style="font-size:13px;color:#8b949e">
+<b>Backend yako:</b> https://your-backend.onrender.com<br>
+Kama backend bado hujai-deploy, tumia manual mode hapa chini:<br>
+<input id="manualCode" placeholder="Weka Transaction Code kama umelipa manual">
+<button class="btn" style="background:#21262d" onclick="manualVerify()">Verify Manual Code</button>
+</div>
+</div>
+
+<script>
+const BACKEND_URL = "https://phoneflash-backend.onrender.com"; // BADILISHA HAPA BAADA YA KU-DEPLOY
+
+async function lipa(){
+  let phone = document.getElementById('phone').value.trim();
+  if(phone.length < 10){alert('Weka namba sahihi'); return;}
+  // convert 07 to 2547
+  if(phone.startsWith('07')) phone = '254' + phone.substring(1);
+  if(phone.startsWith('7')) phone = '254' + phone;
+
+  document.getElementById('payBtn').disabled = true;
+  document.getElementById('payBtn').innerText = 'Inatuma STK...';
+  document.getElementById('waiting').style.display = 'block';
+  document.getElementById('fail').style.display = 'none';
+
+  try{
+    let res = await fetch(BACKEND_URL + '/stk-push', {
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({phone: phone, amount: 500})
+    });
+    let data = await res.json();
+
+    if(data.success){
+      document.getElementById('waiting').innerHTML = '✅ STK imetumwa! Ingiza PIN kwa simu. Tunangoja confirmation...';
+      // poll for payment status every 3 sec
+      pollPayment(data.checkoutId);
+    } else {
+      throw new Error(data.message);
+    }
+  } catch(e){
+    document.getElementById('fail').style.display='block';
+    document.getElementById('fail').innerText='❌ Error: '+e.message+' - Jaribu manual ama angalia backend.';
+    document.getElementById('payBtn').disabled=false;
+    document.getElementById('payBtn').innerText='💳 LIPA KSH 500 SASA';
+  }
+}
+
+async function pollPayment(checkoutId){
+  let tries=0;
+  let interval=setInterval(async()=>{
+    tries++;
+    try{
+      let res = await fetch(BACKEND_URL + '/check-payment/'+checkoutId);
+      let data = await res.json();
+      if(data.paid){
+        clearInterval(interval);
+        document.getElementById('success').style.display='block';
+        document.getElementById('success').innerHTML='✅ MALIPO YAMEPOKELEWA! Transaction: '+data.code;
+        document.getElementById('downloadArea').style.display='block';
+        document.getElementById('waiting').style.display='none';
+      }
+      if(tries>20){ // 60 sec
+        clearInterval(interval);
+        document.getElementById('fail').style.display='block';
+        document.getElementById('fail').innerText='⏰ Timeout. Kama umelipa, weka Transaction Code kwenye manual.';
+        document.getElementById('payBtn').disabled=false;
+      }
+    }catch(e){}
+  }, 3000);
+}
+
+function manualVerify(){
+  let code = document.getElementById('manualCode').value.trim();
+  if(code.length>=8){
+    document.getElementById('success').style.display='block';
+    document.getElementById('success').innerHTML='✅ Manual Verified: '+code;
+    document.getElementById('downloadArea').style.display='block';
+  } else alert('Weka code sahihi');
+}
+</script>
 </body>
 </html>
