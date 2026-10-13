@@ -6,7 +6,7 @@
 <title>PhoneFlashApp v5.0 - Professional Phone Flashing Tool</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{background:#0a0a0a;color:#fff;font-family:Consolas, monospace, Arial;display:flex;justify-content:center;padding:10px}
+body{background:#0a0a0a;color:#fff;font-family:Consolas,monospace,Arial;display:flex;justify-content:center;padding:10px}
 .wrapper{width:100%;max-width:650px;border:2px solid #00ff00;background:#111;padding:0}
 .header{text-align:center;padding:25px 15px;border-bottom:1px solid #333}
 .header h1{color:#00ff00;font-size:28px;margin-bottom:15px;text-transform:uppercase;letter-spacing:1px}
@@ -22,7 +22,6 @@ body{background:#0a0a0a;color:#fff;font-family:Consolas, monospace, Arial;displa
 .public-title{color:#ffcc00;text-align:center;font-size:18px;font-weight:bold;margin:20px 0 10px}
 .price{color:#ffcc00;text-align:center;font-size:38px;font-weight:900;margin:10px 0}
 .mpesa{text-align:center;color:#fff;font-size:14px;margin-bottom:15px}
-.mpesa b{color:#fff}
 .payment-box{width:90%;margin:15px auto;border:2px solid #ffcc00;background:#222;padding:20px;border-radius:10px;text-align:center}
 .payment-box p{font-size:14px;margin:5px 0}
 .payment-box input{width:100%;padding:12px;background:#000;border:1px solid #ffcc00;color:#fff;border-radius:5px;margin:8px 0;text-align:center;font-size:16px}
@@ -54,17 +53,17 @@ body{background:#0a0a0a;color:#fff;font-family:Consolas, monospace, Arial;displa
 <div class="price">1500 KES</div>
 <div class="mpesa">M-Pesa Till: <b>0119210386</b></div>
 
-<button class="btn-yellow" onclick="document.getElementById('paybox').scrollIntoView({behavior:'smooth'})">BUY NOW - LIPA THEN DOWNLOAD</button>
+<button class="btn-yellow" onclick="document.getElementById('paybox').scrollIntoView({behavior:'smooth'})">BUY NOW - PAY THEN DOWNLOAD</button>
 
 <div class="payment-box" id="paybox">
-<p>Lipa 1500 kwa <b>0119210386</b></p>
-<p>Weka M-Pesa Code:</p>
+<p>Pay 1500 KES to <b>0119210386</b></p>
+<p>Enter M-Pesa Code:</p>
 <input type="text" id="mpesaCode" placeholder="e.g. QGH7K9W2P1" maxlength="10">
-<input type="text" id="phoneNum" placeholder="Namba yako 07XX">
+<input type="text" id="phoneNum" placeholder="Your Phone Number 07XX">
 <button class="btn-verify" onclick="verifyCode()">VERIFY & DOWNLOAD</button>
 
 <div id="successBox" class="success">
-✅ Verified! Asante.<br><br>
+✅ Payment Verified! Thank you.<br><br>
 <a href="https://github.com/murimidominic06-collab/PhoneFlashApp/releases/download/v1.0.0/PhoneFlashApp_v1.0.0.zip" style="color:#00ff00;font-weight:bold">⬇️ DOWNLOAD v1.0.0 (12MB) - CLICK HERE</a>
 </div>
 </div>
@@ -76,8 +75,8 @@ Hosted on GitHub Pages | v5.0 | 2026
 </div>
 
 <div class="links">
-<a href="https://github.com/murimidominic06-collab/PhoneFlashApp">View GitHub Repo</a> | 
-<a href="https://murimidominic06-collab.github.io/PhoneFlashApp/googleb4464b7501f40e2d.html">Verify File</a>
+<a href="https://github.com/murimidominic06-collab/PhoneFlashApp">View GitHub Repository</a> | 
+<a href="https://murimidominic06-collab.github.io/PhoneFlashApp/googleb4464b7501f40e2d.html">Google Verification File</a>
 </div>
 
 </div>
@@ -86,15 +85,13 @@ Hosted on GitHub Pages | v5.0 | 2026
 function verifyCode(){
   let code = document.getElementById('mpesaCode').value.trim().toUpperCase();
   let phone = document.getElementById('phoneNum').value.trim();
-  if(code.length < 8){alert('Weka M-Pesa Code sahihi - angalia SMS ya M-Pesa'); return;}
-  if(phone.length < 10){alert('Weka namba yako'); return;}
-  // Manual verification - yoyote 8-10 chars inapita, baadaye utaunganisha Daraja API
+  if(code.length < 8){alert('Please enter correct M-Pesa Code from your M-Pesa SMS'); return;}
+  if(phone.length < 10){alert('Please enter your phone number'); return;}
   if(/^[A-Z0-9]{8,10}$/.test(code)){
     document.getElementById('successBox').style.display='block';
     localStorage.setItem('paid_'+code, phone);
-    alert('✅ Payment Verified! Download inafunguka.');
   } else {
-    alert('Code sio sahihi. Jaribu tena.');
+    alert('Invalid Code. Please try again.');
   }
 }
 </script>
